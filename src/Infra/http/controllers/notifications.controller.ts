@@ -1,7 +1,7 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { randomUUID } from 'node:crypto';
 import { SendNotification } from '../../../aplication/use-cases/send-notification';
-import { CreateNotificationBody } from '../../../Infra/http/dtos/create-notification-body';
+import { CreateNotificationBody } from '@Infra/http/dtos/create-notification-body';
 
 @Controller('notifications')
 export class NotificationsController {
